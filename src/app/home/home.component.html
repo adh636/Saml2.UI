@@ -1,2 +1,5 @@
 <button (click)="login()">LOGIN</button>
-<app-saml-login *ngIf="loggingIn"></app-saml-login>
+<div class="modal" *ngIf="isLoggingIn()">
+  <app-saml-login></app-saml-login>
+</div>
+

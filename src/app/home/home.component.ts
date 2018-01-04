@@ -16,4 +16,8 @@ export class HomeComponent implements OnInit {
   login() {
     this.loggingIn = true;
   }
+
+  isLoggingIn(): boolean {
+    return this.loggingIn;
+  }
 }
